@@ -36,7 +36,6 @@
     .roxa{
         width: 200px;
         height: 200px;
-        background-color: rgb(127, 13, 235);
         display: flex;
         align-items: center;
         align-content: center;
@@ -49,7 +48,19 @@
         font-size: 20px;
         font-family: "Audiowide", sans-serif;
         color:white;
+        animation: changeBackgroundColor 7s infinite;
     }
+    @keyframes changeBackgroundColor {
+  0% {
+    background-color: #e20606;
+  }
+  50% {
+    background-color: #ff960d;
+  }
+  100% {
+    background-color: #e3e656;
+  }
+}
 </style>
 <body>
    <div class="fundo">
