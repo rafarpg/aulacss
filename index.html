@@ -14,14 +14,25 @@
     .fundo{
         width: 100vw;
         height: 100vh;
-        background-image: linear-gradient(to bottom right, rgb(8, 8, 8), rgb(68, 75, 145));
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         justify-items: center;
         align-items: center;
         align-content: center;
+        animation: changeBackgroundColor 7s infinite;
     }
+    @keyframes changeBackgroundColor {
+  0% {
+    background-color: #060494;
+  }
+  50% {
+    background-color: #c826dd;
+  }
+  100% {
+    background-color: #560797;
+  }
+}
     .roxa{
         width: 200px;
         height: 200px;
